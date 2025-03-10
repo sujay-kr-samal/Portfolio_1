@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: makes the background image fixed when scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+nav ul li {
+    margin: 0 35px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif; /* Sci-fi gaming font */
+    font-size: 20px;
+    padding: 15px 0;
+    display: block;
+    transition: font-size 0.3s ease; /* Smooth transition for font size */
+}
+nav ul li a:hover {
+    font-size: 24px; /* Increase font size on hover */
+}
+.textA {
+    position: absolute;
+    color: white;
+    top: 20%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering correction */
+    text-align: center; /* Align text to center */
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.2; /* Better readability */
+    width: 80%; /* Prevent text from spreading too much */
+    max-width: 800px; /* Keeps text from getting too wide */
+}
+
+.textA h1{
+    text-align: center;
+    font-size: 55px;
+    color: transparent; /* Make text color transparent */
+    -webkit-text-stroke: 2px white; /* Add a white border to the text */
+}
+.para {
+    position: absolute;
+    color: white;
+    top: 30%; /* Adjusted to align below .textA */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Proper centering */
+    text-align: center; /* Center text */
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    width: 80%; /* Prevents text from stretching too much */
+    max-width: 800px; /* Keeps text within readable bounds */
+}
+.projects-container {
+    font-family: 'Orbitron', sans-serif; /* Sci-fi gaming font */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    padding: 20px;
+    padding-top: 200px;
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.333);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Accent color */
+}
+
+.project p {
+    font-size: 16px;
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.333);
+}
+
+
+.button {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: left;
+}
+
+.button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif; /* Sci-fi gaming font */
+    font-size: 20px;
+    color: white;
+    background-color: rgba(90, 89, 89, 0.479); /* Semi-transparent background */
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 20px; /* Curved edges */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color, transform, and box-shadow */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+}
+
+.button a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Intensify the glowing effect on hover */
+}
